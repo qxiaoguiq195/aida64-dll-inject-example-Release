@@ -4,7 +4,7 @@
 #pragma comment(lib, "version.lib")
 
 namespace {
-    constexpr char ALPHABET[] = "";
+    constexpr char ALPHABET[] = "8M41D38D6UZDJT11EAY98YM54";
 
     bool base34_encode(uint32_t value, size_t width, std::string& out) {
         uint64_t limit = 1;
