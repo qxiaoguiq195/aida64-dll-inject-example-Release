@@ -211,7 +211,7 @@ std::string gen_key(ProductType pt, uint32_t subtype, std::time_t issue_date, st
         ? std::min<uint32_t>(std::max<uint32_t>(static_cast<uint32_t>((support_due - base_ts) / 86400), 1u), DEFAULT_OFFSET)
         : DEFAULT_OFFSET;
 
-    constexpr uint32_t FIELD_5_6 = 6u;
+    constexpr uint32_t FIELD_5_6 = 1u;
     constexpr uint32_t FIELD_7_8 = 1u;
 
     const uint32_t packed_date    = pack_base_date(b_year, b_month, b_day);
